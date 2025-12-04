@@ -64,20 +64,64 @@
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
+                <input type="checkbox" id="html">
+                <label for="html">HTML5</label>
+                <input type="checkbox" id="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js">
+                <label for="js">JS</label>
+                <input type="checkbox" id="jquery">
+                <label for="jquery">Jquery</label>
+                <input type="checkbox" id="react">
+                <label for="react">React</label>
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+         <input type="text" placeholder="Новый скилл">
         <!-- 6) Создай здесь кнопку “Добавить” -->
+         <button>Добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
+         <hr>
         
         <table data-cy="hw-about-table-pre">
             <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
+            <table style="border: 1px solid #000;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #000;">П/П</th>
+                        <th style="border: 1px solid #000;">Наименование</th>
+                        <th style="border: 1px solid #000;">Количество</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th style="border: 1px solid #000;">1</th>
+                        <th style="border: 1px solid #000;">Монитор</th>
+                        <th style="border: 1px solid #000;">2</th>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid #000;">2</th>
+                        <th style="border: 1px solid #000;">Клавиатура</th>
+                        <th style="border: 1px solid #000;">1</th>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid #000;">3</th>
+                        <th style="border: 1px solid #000;">Мышь</th>
+                        <th style="border: 1px solid #000;">1</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" style="border: 1px solid #000;">Итоги:</th>
+                        <th style="border: 1px solid #000;">4</th>
+                    </tr>
+                </tbody>
+            </table>            
         </table>
     </section>
     <footer data-cy="hw-footer-pre">
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+         <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
     </footer>
 </body>
 </html>
