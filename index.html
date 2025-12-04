@@ -28,7 +28,7 @@
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
         <select name="city">
             <option value="Минск">Минск</option>
-            <option value="Барановичи">Барановичи</option>
+            <option value="Барановичи" selected>Барановичи</option>
             <option value="Гродно">Гродно</option>
             <option value="Брест">Брест</option>
         </select>
@@ -87,33 +87,38 @@
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать 2 столбца (как должно выглядеть - смотри образец). Таблицу можно заполнять любыми данными -->
-            <table style="border: 1px solid #000;">
+            <table border="">
                 <thead>
                     <tr>
-                        <th style="border: 1px solid #000;">П/П</th>
-                        <th style="border: 1px solid #000;">Наименование</th>
-                        <th style="border: 1px solid #000;">Количество</th>
+                        <th><h3>П/П</h3></th>
+                        <th><h3>Наименование</h3></th>
+                        <th><h3>Количество</h3></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th style="border: 1px solid #000;">1</th>
-                        <th style="border: 1px solid #000;">Монитор</th>
-                        <th style="border: 1px solid #000;">2</th>
+                        <th>1</th>
+                        <th>Монитор</th>
+                        <th>2</th>
                     </tr>
                     <tr>
-                        <th style="border: 1px solid #000;">2</th>
-                        <th style="border: 1px solid #000;">Клавиатура</th>
-                        <th style="border: 1px solid #000;">1</th>
+                        <th>2</th>
+                        <th>Клавиатура</th>
+                        <th>1</th>
                     </tr>
                     <tr>
-                        <th style="border: 1px solid #000;">3</th>
-                        <th style="border: 1px solid #000;">Мышь</th>
-                        <th style="border: 1px solid #000;">1</th>
+                        <th>3</th>
+                        <th>Мышь</th>
+                        <th>1</th>
                     </tr>
                     <tr>
-                        <th colspan="2" style="border: 1px solid #000;">Итоги:</th>
-                        <th style="border: 1px solid #000;">4</th>
+                        <th>4</th>
+                        <th>колонки</th>
+                        <th>1</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Итоги:</th>
+                        <th>5</th>
                     </tr>
                 </tbody>
             </table>            
